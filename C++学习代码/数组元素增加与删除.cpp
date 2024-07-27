@@ -1,14 +1,5 @@
 #include "iostream"
-#include "random"
 using namespace std;
-int get_random_num(int min,int max)
-{
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_int_distribution<> dis (min,max);
-    int random_number=dis(gen);
-    return random_number;
-}//随机数获取函数
 int main()
 {
     int *p1 = new int[5] {1,3,5,7,9};
